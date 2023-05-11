@@ -1,0 +1,59 @@
+$title-color: #080707;
+$text-color: #878181;
+$text-size: 25px;
+$sum-color: #3e34c7;
+@mixin size-img {
+    width: 390px;
+    height: 380px;
+}
+@mixin reset {
+    margin: 10px;
+    padding: 10px;
+}
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title{
+    color: $title-color;
+    font-size: 47px;}
+.card{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    height: 380px;
+    border: 2px solid rgb(9, 9, 9);
+    @include reset()
+}
+
+.card__image{
+   @include size-img()
+   @include reset()
+}
+.card__image:hover{
+        transform: scale(1.5);
+}
+.card__title{
+    color:$title-color;
+}
+.card__subtitle{
+    color: $text-color;
+    font-size: $text-size;
+}
+.product-info{
+   @include flex-column()
+}
+.card-left{
+    display: flex;
+    align-items: center;
+}
+.sum{
+    color: #3e34c7;
+   display: flex;
+   align-items: center;
+   font-size: $text-size;
+}
+.cards{
+    @include flex-column()
+}
