@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1278px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .main-title {
   color: #080707;
   font-size: 47px;
@@ -6,11 +16,14 @@
 .card {
   display: flex;
   justify-content: space-between;
-  width: 1000px;
+  width: 1200px;
   height: 380px;
-  border: 2px solid #090909;
   margin: 10px;
   padding: 10px;
+}
+
+.card:not(:last-child) {
+  border-bottom: 2px solid #090909;
 }
 
 .card__image {
@@ -51,6 +64,29 @@
 }
 
 .cards {
+  max-width: 1270px;
   display: flex;
   flex-direction: column;
+  border: 2px solid #090909;
+  margin: 10px;
+  padding: 10px;
+  margin-bottom: 70px;
+}
+
+.btn-coupon {
+  background-color: black;
+  color: aliceblue;
+  width: 370px;
+  height: 100px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.btn-coupon:hover {
+  opacity: 0.75;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
 }

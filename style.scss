@@ -1,7 +1,17 @@
+html {
+    box-sizing: border-box;
+}
+.wrapper{
+    max-width: 1278px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 $title-color: #080707;
 $text-color: #878181;
 $text-size: 25px;
 $sum-color: #3e34c7;
+
 @mixin size-img {
     width: 390px;
     height: 380px;
@@ -14,19 +24,21 @@ $sum-color: #3e34c7;
     display: flex;
     flex-direction: column;
 }
-
+@mixin space-between{
+    display: flex;
+    justify-content: space-between;
+}
 .main-title{
     color: $title-color;
     font-size: 47px;}
 .card{
-    display: flex;
-    justify-content: space-between;
-    width: 1000px;
+    @include space-between();
+    width: 1200px;
     height: 380px;
-    border: 2px solid rgb(9, 9, 9);
     @include reset()
 }
-
+.card:not(:last-child){
+    border-bottom: 2px solid rgb(9, 9, 9);}
 .card__image{
    @include size-img()
    @include reset()
@@ -55,5 +67,23 @@ $sum-color: #3e34c7;
    font-size: $text-size;
 }
 .cards{
-    @include flex-column()
+    max-width: 1270px;
+    @include flex-column();
+    border: 2px solid rgb(9, 9, 9);
+    @include reset();
+    margin-bottom: 70px;
+}
+.btn-coupon{
+    background-color: black;
+    color: aliceblue;
+    width: 370px;
+    height: 100px;
+    cursor: pointer;
+    font-size: $text-size;
+}
+.btn-coupon:hover {
+    opacity: 0.75;
+}
+.price{
+   @include space-between();
 }
