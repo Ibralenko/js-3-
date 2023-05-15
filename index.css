@@ -92,9 +92,15 @@ html {
   justify-content: space-between;
 }
 
-#result {
-  font-size: large;
-  color: #080707;
+.price-right {
   display: flex;
   align-items: center;
+}
+
+#result {
+  font-size: 33px;
+  color: #3e34c7;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
 }

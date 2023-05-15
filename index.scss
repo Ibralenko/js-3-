@@ -86,13 +86,13 @@ html {
 .btn-coupon:hover {
     opacity: 0.75;
 }
-.price{
-   @include space-between();
+.oprice-right{
+    @include flex-column();
 }
+
 #result{
-    font-size: large;
-    color: #080707;
+    font-size: 33px;
+    color: ;
     display: flex;
     align-items: center;
-    
 }

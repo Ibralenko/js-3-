@@ -7,7 +7,13 @@ let price1 = Number(sum1);
 let price2 = Number(sum2);
 let price3 = Number(sum3);
 let price4 = Number(sum4);
-
 let result = price1 + price2 + price3 + price4;
+const order = document.querySelector("#result");
+order.textContent = String(result) + " руб.";
 
-document.getElementById("result").innerHTML = String(result) + " руб.";
+const button = document.querySelector(".btn-coupon");
+button.addEventListener("click", countPrice);
+
+function countPrice() {
+  order.textContent = String((result / 100) * 80) + " руб.";
+}
