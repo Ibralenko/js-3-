@@ -60,7 +60,8 @@ html {
   color: #3e34c7;
   display: flex;
   align-items: center;
-  font-size: 25px;
+  font-size: 30px;
+  font-style: bold;
 }
 
 .cards {
@@ -89,4 +90,11 @@ html {
 .price {
   display: flex;
   justify-content: space-between;
+}
+
+#result {
+  font-size: large;
+  color: #080707;
+  display: flex;
+  align-items: center;
 }

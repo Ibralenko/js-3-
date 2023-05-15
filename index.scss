@@ -1,16 +1,8 @@
-html {
-    box-sizing: border-box;
-}
-.wrapper{
-    max-width: 1278px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
 $title-color: #080707;
 $text-color: #878181;
 $text-size: 25px;
-$sum-color: #3e34c7;
+$sum-color: #1506e2;
+$sum-bold: bold;
 
 @mixin size-img {
     width: 390px;
@@ -28,6 +20,15 @@ $sum-color: #3e34c7;
     display: flex;
     justify-content: space-between;
 }
+
+html {
+    box-sizing: border-box;
+}
+.wrapper{
+    max-width: 1278px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .main-title{
     color: $title-color;
     font-size: 47px;}
@@ -35,13 +36,13 @@ $sum-color: #3e34c7;
     @include space-between();
     width: 1200px;
     height: 380px;
-    @include reset()
+    @include reset();
 }
 .card:not(:last-child){
     border-bottom: 2px solid rgb(9, 9, 9);}
 .card__image{
-   @include size-img()
-   @include reset()
+   @include size-img();
+   @include reset();
 }
 .card__image:hover{
         transform: scale(1.5);
@@ -60,11 +61,12 @@ $sum-color: #3e34c7;
     display: flex;
     align-items: center;
 }
-.sum{
+.sum {
     color: #3e34c7;
    display: flex;
    align-items: center;
-   font-size: $text-size;
+   font-size: 30px;
+   font-style: $sum-bold;
 }
 .cards{
     max-width: 1270px;
@@ -86,4 +88,11 @@ $sum-color: #3e34c7;
 }
 .price{
    @include space-between();
+}
+#result{
+    font-size: large;
+    color: #080707;
+    display: flex;
+    align-items: center;
+    
 }
