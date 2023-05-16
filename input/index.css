@@ -1,0 +1,22 @@
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.input {
+    margin-top: 200px;
+    margin-right: 30px;
+    width: 250px;
+    height: 50px;
+}
+
+.button {
+    margin-top: 200px;
+    width: 250px;
+    height: 50px;
+    color: black;
+    background-color: #a5cca5;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 30px;
+}
